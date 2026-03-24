@@ -203,16 +203,20 @@
   /* ── META / TIMING ── */
   .meta-row { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 12px; align-items: center; }
   .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+  .meta-link-tan     { color: var(--tan-accent); text-decoration: none; }
   .meta-link-oojoo   { color: var(--oojoo-accent); text-decoration: none; }
   .meta-link-blue    { color: var(--longdeep-accent); text-decoration: none; }
+  .meta-link-jonghwa { color: var(--jonghwa-accent); text-decoration: none; }
   .survey-note { font-size: 11px; color: var(--muted); text-align: center; padding: 12px; border: 1px dashed var(--border); border-radius: 6px; margin-bottom: 0; }
   .section-divider { display: flex; align-items: center; gap: 16px; margin: 56px 0; }
   .section-divider::before, .section-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
   .section-divider-text { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
   .timing { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); padding: 6px 12px; background: white; border: 1px solid var(--border); border-radius: 20px; margin-bottom: 20px; }
   .timing-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-  .timing-dot-gold { background: var(--gold); }
-  .timing-dot-blue { background: var(--longdeep-accent); }
+  .timing-dot-tan   { background: var(--tan-accent); }
+  .timing-dot-gold  { background: var(--gold); }
+  .timing-dot-blue  { background: var(--longdeep-accent); }
+  .timing-dot-green { background: var(--jonghwa-accent); }
 
   /* ── FOOTER ── */
   .newsletter-footer { text-align: center; padding-top: 40px; border-top: 1px solid var(--border); }
@@ -274,17 +278,47 @@
   </div>
   <div class="coming-soon-box">
     <span class="cs-icon">📷</span>
-    <span class="cs-text">사진 및 내용 준비 중</span>
+    <span class="cs-text">사진 촬영 후 업데이트 예정</span>
   </div>
+
   <div class="recommender-bar">
-    <div class="recommender-icon icon-tan">?</div>
-    <div class="recommender-text"><strong>추천인</strong> 정보 준비 중</div>
+    <div class="recommender-icon icon-tan">JW</div>
+    <div class="recommender-text">
+      <strong>개발QA파트 강준우M</strong> 추천 &nbsp;·&nbsp; 야탑 거주 14년차의 단골
+    </div>
   </div>
-  <p class="cafe-body">탄커피에 대한 소개 및 추천 내용이 곧 업데이트될 예정입니다.</p>
-  <p class="one-liner" style="border-left-color: var(--tan-accent); background: rgba(123,110,90,0.05);">
-    "혼자만의 시간이 필요할 때, 탄커피로"
+
+  <span class="timing">
+    <span class="timing-dot timing-dot-tan"></span>
+    점심시간 방문 추천
+  </span>
+
+  <p class="cafe-body">
+    야탑에서 14년을 살아온 진짜 로컬이 보증하는 커피 맛집. 부모님 소개로 처음 방문하게 됐고, 한 번 마셔본 뒤 '야탑동 커피 최강'이라는 확신을 갖게 된 곳입니다. 프랜차이즈 카페가 넘쳐나는 요즘, 오랜 내공이 느껴지는 <strong>융드립커피</strong> 한 잔으로 진짜 커피 맛을 경험해보세요. 동네에서 수십 년을 이어온 집집마다 전해지는 '숨은 맛집' 느낌이 그대로 살아있는 공간입니다.
   </p>
-  <div class="meta-row"><span>📍 주소 업데이트 예정</span></div>
+
+  <p class="one-liner" style="border-left-color: var(--tan-accent); background: rgba(123,110,90,0.05);">
+    "야탑 거주 14년차가 말하는 커피 최강맛집"
+  </p>
+
+  <p class="menu-section-title">추천 메뉴</p>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-card-img" style="background: rgba(123,110,90,0.08); display:flex; align-items:center; justify-content:center; font-size:36px; aspect-ratio:1/1;">☕</div>
+      <div class="menu-card-body">
+        <span class="menu-badge badge-tan">강추</span>
+        <p class="menu-name">융드립커피</p>
+        <p class="menu-desc">야탑동에서 최고로 맛있다는 추천인의 강력 추천. 오직 이 한 잔을 위해 방문할 가치 있음.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="meta-row">
+    <span>📍 경기 성남시 분당구 양현로310번길 7 1층</span>
+    <span class="meta-dot"></span>
+    <a href="https://naver.me/IDkSbypC" class="meta-link-tan" target="_blank">네이버 지도 보기 →</a>
+  </div>
+  <p class="survey-note">※ 점심시간 방문을 추천드려요. 사진은 곧 업데이트 예정입니다!</p>
 </section>
 
 <div class="section-divider"><span class="section-divider-text">두 번째 카페</span></div>
@@ -452,17 +486,47 @@
   </div>
   <div class="coming-soon-box">
     <span class="cs-icon">📷</span>
-    <span class="cs-text">사진 및 내용 준비 중</span>
+    <span class="cs-text">사진 촬영 후 업데이트 예정</span>
   </div>
+
   <div class="recommender-bar">
-    <div class="recommender-icon icon-jonghwa">?</div>
-    <div class="recommender-text"><strong>추천인</strong> 정보 준비 중</div>
+    <div class="recommender-icon icon-jonghwa">TM</div>
+    <div class="recommender-text">
+      <strong>공공지원팀 전태민M</strong> 추천 &nbsp;·&nbsp; 산책 중 우연히 발견한 숨은 보석
+    </div>
   </div>
-  <p class="cafe-body">카페 종화에 대한 소개 및 추천 내용이 곧 업데이트될 예정입니다.</p>
-  <p class="one-liner" style="border-left-color: var(--jonghwa-accent); background: rgba(90,138,106,0.05);">
-    "여유로운 주말 오후, 카페 종화에서"
+
+  <span class="timing">
+    <span class="timing-dot timing-dot-green"></span>
+    퇴근 후 · 주말 방문 추천
+  </span>
+
+  <p class="cafe-body">
+    동네 산책길에 우연히 눈에 들어온 카페. 문을 열고 들어선 순간 '여기다!' 싶었다는 추천인의 말처럼, 정성스럽게 꾸며진 인테리어와 아늑한 분위기가 발걸음을 잡아끕니다. 그리고 이 카페의 숨겨진 보너스는 바로 <strong>엄청 큰 강아지</strong>. 커피를 마시며 강아지와 함께하는 힐링 타임은 덤입니다. 시그니처 메뉴인 <strong>땅콩크림라떼</strong>는 고소하고 달달한 풍미가 일품으로, 주말 나들이 코스로 강력 추천하는 카페입니다.
   </p>
-  <div class="meta-row"><span>📍 주소 업데이트 예정</span></div>
+
+  <p class="one-liner" style="border-left-color: var(--jonghwa-accent); background: rgba(90,138,106,0.05);">
+    "진짜 나만 가고 싶지만.. 커피가 너무 맛있어서 공유합니다 🐕"
+  </p>
+
+  <p class="menu-section-title">추천 메뉴</p>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-card-img" style="background: rgba(90,138,106,0.08); display:flex; align-items:center; justify-content:center; font-size:36px; aspect-ratio:1/1;">🥜</div>
+      <div class="menu-card-body">
+        <span class="menu-badge badge-jonghwa">시그니처</span>
+        <p class="menu-name">땅콩크림라떼</p>
+        <p class="menu-desc">고소하고 달달한 풍미가 인상적인 시그니처 음료. 예쁜 인테리어와 함께 즐기면 더 맛있음.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="meta-row">
+    <span>📍 경기 성남시 분당구 이매로89번길 24 1층</span>
+    <span class="meta-dot"></span>
+    <a href="https://naver.me/xwmqCNQl" class="meta-link-jonghwa" target="_blank">네이버 지도 보기 →</a>
+  </div>
+  <p class="survey-note">※ 분위기 좋은 인테리어와 귀여운 강아지까지! 사진은 곧 업데이트 예정입니다 🐾</p>
 </section>
 
 <footer class="newsletter-footer">
